@@ -22,7 +22,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .question-section {
@@ -33,7 +33,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    gap: 60.30px;
+    gap: 80px;
 }
 
 .header {
@@ -41,23 +41,30 @@ body {
     font-size: 48px;
     line-height: 57.60px;
     word-wrap: break-word;
+    padding-left: 20%;
+    padding-right: 20%;
 }
 
-.questions {
+.text-grid {
     width: 100%;
-    display: inline-flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+    padding-left: 20%;
+    padding-right: 20%;
+    align-items: start;
 }
 
 .question {
     flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
-    gap: 10px;
+    gap: 5px;
+    margin-right: 20px;
 }
 
 .question-title {
@@ -68,10 +75,10 @@ body {
     word-wrap: break-word;
 }
 
-.question-content {
+.answer-text {
     color: white;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 24px;
     word-wrap: break-word;
 }
@@ -91,10 +98,12 @@ body {
 .footer-links {
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
     gap: 20px;
+    padding-left: 20%;
+    padding-right: 20%;
 }
 
 .footer-item {

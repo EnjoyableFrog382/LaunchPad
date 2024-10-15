@@ -60,10 +60,11 @@ a.faq-text {
 	font-size: 1rem;
 	font-weight: bold;
 	text-decoration: none;
+	transition: color 0.3s;
 }
 
 a.faq-text:hover {
-	text-decoration: underline;
+	color: skyblue;
 }
 
 .media-location { 
@@ -99,12 +100,18 @@ a.faq-text:hover {
 	position: relative;
 }
 
-.contact-text { 
+a.contact-text { 
 	color: rgba(255, 255, 255, 1);
 	font-family: Poppins;
 	font-size: 1rem;
 	text-align: center;
 	font-weight: bold;
+	text-decoration: none;
+	transition: color 0.3s;
+}
+
+a.contact-text:hover {
+	color: skyblue;
 }
 
 .contact-border { 
@@ -116,4 +123,13 @@ a.faq-text:hover {
 	align-items: center;
 	justify-content: center;
 	margin-left: 1rem;
+	transition: border-color 0.3s;
+}
+
+.contact-border:hover {
+	border-color: skyblue;
+}
+
+.contact-border:hover a.contact-text {
+	color: skyblue;
 }
