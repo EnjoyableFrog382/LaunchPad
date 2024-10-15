@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.section-container {
+    width: 100%;
+    min-height: 537px;
+    padding: 50px 5%;
+    background: #004D93;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1;
+    padding-right: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 39px;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.header {
+    color: white;
+    font-size: 3.5vw;
+    font-family: 'Staatliches', sans-serif;
+    line-height: 1.2;
+    text-align: left;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    width: 100%;
+}
+
+.text {
+    color: white;
+    font-size: 2vw;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.5;
+    text-align: left;
+}
