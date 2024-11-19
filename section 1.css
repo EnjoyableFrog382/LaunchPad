@@ -10,6 +10,7 @@ body {
 	align-items: center;
     min-height: 100vh;
     background-color: #f0f0f0;
+	-webkit-font-smoothing: antialiased;
 }
 
 section {
@@ -39,6 +40,9 @@ section {
 	font-size: 2rem;
 	letter-spacing: 1px;
 	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-transform: uppercase;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.6);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .navigation-container-setting { 
@@ -60,11 +64,13 @@ a.faq-text {
 	font-size: 1rem;
 	font-weight: bold;
 	text-decoration: none;
-	transition: color 0.3s;
+	transition: color 0.3s, transform 0.3s;
+	-webkit-transition: color 0.3s, transform 0.3s;
 }
 
 a.faq-text:hover {
 	color: skyblue;
+	transform: scale(1.1);
 }
 
 .media-location { 
@@ -73,11 +79,19 @@ a.faq-text:hover {
 	margin: 0 1rem;
 }
 
-.media-text { 
+a.media-text { 
 	color: rgba(255, 255, 255, 1);
 	font-family: Poppins;
 	font-size: 1rem;
 	font-weight: bold;
+	text-decoration: none;
+	transition: color 0.3s, transform 0.3s;
+	-webkit-transition: color 0.3s, transform 0.3s;
+}
+
+a.media-text:hover {
+	color: skyblue;
+	transform: scale(1.1);
 }
 
 .community-location { 
@@ -86,11 +100,19 @@ a.faq-text:hover {
 	margin: 0 1rem;
 }
 
-.community-text { 
+a.community-text { 
 	color: rgba(255, 255, 255, 1);
 	font-family: Poppins;
 	font-size: 1rem;
 	font-weight: bold;
+	text-decoration: none;
+	transition: color 0.3s, transform 0.3s;
+	-webkit-transition: color 0.3s, transform 0.3s;
+}
+
+a.community-text:hover {
+	color: skyblue;
+	transform: scale(1.1);
 }
 
 .contact-location { 
@@ -123,11 +145,18 @@ a.contact-text:hover {
 	align-items: center;
 	justify-content: center;
 	margin-left: 1rem;
-	transition: border-color 0.3s;
+	transition: border-color 0.3s, transform 0.3s;
+    -webkit-transition: border-color 0.3s, transform 0.3s;
+    cursor: pointer;
+	background: linear-gradient(135deg, #F0ADDD, #004D93);
+    background-size: 200% 200%;
+    transition: background-position 0.5s ease-in-out;
 }
 
 .contact-border:hover {
 	border-color: skyblue;
+	transform: translateY(-5px);
+	background-position: 100% 100%;
 }
 
 .contact-border:hover a.contact-text {

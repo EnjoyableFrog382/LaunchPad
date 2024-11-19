@@ -6,17 +6,21 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    -webkit-font-smoothing: antialiased;
 }
 
 .section-container {
     width: 100%;
     min-height: 537px;
     padding: 50px 5%;
-    background: #004D93;
+    background: -webkit-linear-gradient(45deg, #004D93, #002F60);
+    background: linear-gradient(45deg, #004D93, #002F60);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    -webkit-box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
 }
 
 .content {
@@ -29,6 +33,13 @@ body {
     gap: 39px;
     width: 100%;
     padding: 0 20px;
+    -webkit-transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+}
+
+.content:hover {
+    -webkit-transform: scale(1.02);
+    transform: scale(1.02);
 }
 
 .header {
@@ -37,6 +48,9 @@ body {
     font-family: 'Staatliches', sans-serif;
     line-height: 1.2;
     text-align: left;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.2);
+    -webkit-text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
 }
 
 .description {
@@ -52,4 +66,6 @@ body {
     font-family: 'Inter', sans-serif;
     line-height: 1.5;
     text-align: left;
+    -webkit-text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }

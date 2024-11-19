@@ -10,19 +10,8 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #F0ADDD;
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 40px;
-    border-radius: 8px;
-    background: #F0ADDD;
-    max-width: 600px;
-    width: 100%;
+    background: -webkit-linear-gradient(135deg, #F0ADDD, #FFC8E6);
+    background: linear-gradient(135deg, #F0ADDD, #FFC8E6);
 }
 
 .header {
@@ -31,6 +20,12 @@ body {
     font-weight: 700;
     margin-bottom: 30px;
     text-align: center;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(90deg, #004D93, #0072BB);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .form-container {
@@ -50,6 +45,14 @@ body {
     border: 1px solid #ccc;
     border-radius: 8px;
     font-size: 16px;
+    transition: box-shadow 0.3s ease;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.input-field:focus {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-color: #004D93;
+    outline: none;
 }
 
 .message-container {
@@ -64,19 +67,35 @@ textarea {
     font-size: 16px;
     resize: none;
     height: 100px;
+    transition: box-shadow 0.3s ease;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+textarea:focus {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-color: #004D93;
+    outline: none;
 }
 
 .send-button {
-    background: #004D93;
+    background: -webkit-linear-gradient(135deg, #004D93, #0072BB);
+    background: linear-gradient(135deg, #004D93, #0072BB);
     color: white;
     padding: 16px;
     border: none;
     border-radius: 8px;
     font-size: 16px;
     cursor: pointer;
-    transition: background 0.3s;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .send-button:hover {
-    background: #003366;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.send-button:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
